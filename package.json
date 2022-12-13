@@ -1,0 +1,15 @@
+{
+  "name": "code-style-enforcement",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcichosz/code-style-enforcement.git"
+  },
+  "author": "Grzegorz Cichosz",
+  "license": "ISC",
+  "homepage": "https://github.com/gcichosz/code-style-enforcement#readme",
+  "engines": {
+    "node": "^18",
+    "npm": "^8"
+  }
+}
