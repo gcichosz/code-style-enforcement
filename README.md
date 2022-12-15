@@ -4,6 +4,7 @@
 
 - [Plan](#plan)
 - [Prettier](#prettier)
+- [ESLint](#eslint)
 
 # Plan
 
@@ -60,3 +61,48 @@ Use [Prettier's CLI `--ignore-unknown` option](https://prettier.io/docs/en/cli.h
 
 To check code style issues in all files run `npx prettier --check .` for npm, and `yarn prettier --check .` for Yarn
 To fix code style issues in all files run `npx prettier --write .` for npm, and `yarn write --check .` for Yarn
+
+# ESLint
+
+[ESLint](https://eslint.org/) is a static code analyzer for JavaScript, and by extension for TypeScript.
+
+## Why?
+
+- To quickly find common problems in code
+
+## Installation
+
+In a TypeScript codebase, alongside Prettier:
+
+`npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-prettier eslint-plugin-prettier`
+
+In a JavaScript codebase, alongside Prettier:
+
+`npm install --save-dev eslint @babel/core @babel/eslint-parser @babel/preset-env eslint-config-prettier eslint-plugin-prettier`
+
+## Configuration
+
+[ESLint configuration reference](https://eslint.org/docs/latest/user-guide/configuring/).
+
+See `./.eslintrc.js` for example configuration for TypeScript codebase with Prettier. For JavaScript codebase with Babel and Prettier it would be something like:
+
+```javascript
+module.exports = {
+  parser: "@babel/eslint-parser",
+
+  env: {
+    node: true,
+  },
+
+  extends: ["eslint:recommended", "plugin:prettier/recommended"],
+};
+```
+
+## Ignoring files
+
+Use `.eslintignore` to ignore files and/or directories. See `./.eslintignore` for an example.
+
+## Usage
+
+To check code problems in all files run `npx eslint .`.
+To fix code problems in all files run `npx eslint --fix .`.
