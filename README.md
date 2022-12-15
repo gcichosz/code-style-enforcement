@@ -38,8 +38,7 @@
 
 ## Installation
 
-npm: `npm install --save-dev prettier`
-Yarn: `yarn add --dev prettier`
+`npm install --save-dev prettier`
 
 ## Configuration
 
@@ -59,8 +58,8 @@ Use [Prettier's CLI `--ignore-unknown` option](https://prettier.io/docs/en/cli.h
 
 ## Usage
 
-To check code style issues in all files run `npx prettier --check .` for npm, and `yarn prettier --check .` for Yarn
-To fix code style issues in all files run `npx prettier --write .` for npm, and `yarn write --check .` for Yarn
+To check code style issues in all files run `npx prettier --check .`.
+To fix code style issues in all files run `npx prettier --write .`.
 
 # ESLint
 
