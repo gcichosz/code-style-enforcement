@@ -1,0 +1,32 @@
+name: Continuous inspection
+
+on: pull_request
+
+jobs:
+  audit-lint-build-test:
+    name: Audit, lint, build, and test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Audit dependencies
+        run: npm audit --omit=dev
+
+      - name: Install dependencies
+        run: npm clean-install
+
+      - name: Lint
+        run: npm run ci:lint
+
+      - name: Build
+        run: npm run ci:build
+
+      - name: Test
+        run: npm test

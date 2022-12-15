@@ -14,7 +14,10 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "ci:build": "tsc --noEmit",
+    "ci:lint": "eslint --ext ts . && prettier --check .",
+    "test": ""
   },
   "devDependencies": {
     "@types/node": "^18.11.14",
