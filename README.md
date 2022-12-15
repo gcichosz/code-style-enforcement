@@ -5,6 +5,7 @@
 - [Plan](#plan)
 - [Prettier](#prettier)
 - [ESLint](#eslint)
+- [GitHub Actions](#github-actions)
 
 # Plan
 
@@ -105,3 +106,28 @@ Use `.eslintignore` to ignore files and/or directories. See `./.eslintignore` fo
 
 To check code problems in all files run `npx eslint .`.
 To fix code problems in all files run `npx eslint --fix .`.
+
+# GitHub Actions
+
+[GitHub Actions](https://github.com/features/actions) is only an example of a CI/CD tool. There are many, many more, both paid and free. Here are a few examples:
+
+- [Azure Pipelines](https://azure.microsoft.com/en-us/products/devops/pipelines/)
+- [CircleCI](https://circleci.com/)
+- [GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
+- [Jenkins](https://www.jenkins.io/)
+- [Travis CI](https://www.travis-ci.com/)
+
+## Why?
+
+- To automate code inspection, builds, and tests before adding it to a codebase
+- To automate deployments
+
+## Installation
+
+GitHub Actions are available out-of-the box in, drum roll, GitHub repositories.
+
+## Configuration
+
+[GitHub Actions workflow reference](https://docs.github.com/en/actions/using-workflows/about-workflows).
+
+See `./.github/workflows/continuous-inspection.yaml` for example continuous inspection workflow.
