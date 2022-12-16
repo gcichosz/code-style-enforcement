@@ -7,6 +7,7 @@
 - [ESLint](#eslint)
 - [GitHub Actions](#github-actions)
 - [Husky](#husky)
+- [lint-staged](#lint-staged)
 
 # Plan
 
@@ -159,3 +160,32 @@ There is a way, but please, don't do this 🙏
 ## Usage
 
 Just run Git commands which hooks you subscribed to and Husky will run automatically 🐶 woof!
+
+# lint-staged
+
+[lint-staged](https://github.com/okonet/lint-staged) is a tool to run commands on Git staged files only.
+
+## Why?
+
+- To inspect only the code relevant to current change
+- To shorten the feedback loop regarding code changes even more
+
+## Installation
+
+`npm install --save-dev lint-staged`
+
+## Configuration
+
+[Lint-staged configuration reference](https://github.com/okonet/lint-staged#Configuration).
+
+See `./lint-staged.config.js` for example configuration.
+
+**Subscribe lint-staged to a Git hook for maximum effect.** For example using [Husky](#husky)
+
+## Ignoring files
+
+Files lint-stages runs on are configured using glob patterns in [lint-staged configuration file](#configuration-4), so ignore files simply by not include them in lint-staged configuration.
+
+## Usage
+
+It's possible to run lint-staged using `npx lint-staged`, but the power of lint-staged comes from running it on Git hooks. Therefore, subscribe lint-staged to Git hooks, using [Husky](#husky) for example, and just run Git commands.
