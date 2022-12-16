@@ -6,6 +6,7 @@
 - [Prettier](#prettier)
 - [ESLint](#eslint)
 - [GitHub Actions](#github-actions)
+- [Husky](#husky)
 
 # Plan
 
@@ -131,3 +132,30 @@ GitHub Actions are available out-of-the box in, drum roll, GitHub repositories.
 [GitHub Actions workflow reference](https://docs.github.com/en/actions/using-workflows/about-workflows).
 
 See `./.github/workflows/continuous-inspection.yaml` for example continuous inspection workflow.
+
+# Husky
+
+[Husky](https://typicode.github.io/husky/#/) is a Git hooks tool.
+
+## Why?
+
+- To inspect the code before it reaches the remote
+- To shorten the feedback loop regarding code changes
+
+## Installation
+
+`npx husky-init && npm install`
+
+## Configuration
+
+[How to create a hook](https://typicode.github.io/husky/#/?id=create-a-hook).
+
+See `./.husky/pre-commit` for an example hook.
+
+## Bypassing hooks
+
+There is a way, but please, don't do this 🙏
+
+## Usage
+
+Just run Git commands which hooks you subscribed to and Husky will run automatically 🐶 woof!
