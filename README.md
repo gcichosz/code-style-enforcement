@@ -22,11 +22,13 @@
 9. Solution #4 - Husky
 10. Problem #5 - could be shorter feedback loop
 11. Solution #5 - lint-staged
-12. Problem #6 - laziness
-13. Solution #6 - branch protection
-14. Problem #7 - legacy
-15. Solution #7 - configuration and incremental refactoring
-16. Outro - why do we need all of this?
+12. Problem #6 - manual fixes
+13. Solution #6 - automated fixes
+14. Problem #7 - laziness
+15. Solution #7 - branch protection
+16. Problem #8 - legacy
+17. Solution #8 - configuration and incremental refactoring
+18. Outro - why do we need all of this?
 
 # Prettier
 
