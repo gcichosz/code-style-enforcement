@@ -8,6 +8,7 @@
 - [GitHub Actions](#github-actions)
 - [Husky](#husky)
 - [lint-staged](#lint-staged)
+- [Branch protection](#branch-protection)
 
 # Plan
 
@@ -191,3 +192,32 @@ Files lint-stages runs on are configured using glob patterns in [lint-staged con
 ## Usage
 
 It's possible to run lint-staged using `npx lint-staged`, but the power of lint-staged comes from running it on Git hooks. Therefore, subscribe lint-staged to Git hooks, using [Husky](#husky) for example, and just run Git commands.
+
+# Branch protection
+
+Branch protection is a practice of guarding branches from pushes, if set rules aren't followed, on a repository level. Different Git hosting services have their own implementation:
+
+- [GitHub protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches)
+- [Azure DevOps branch policies](https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies)
+- [GitLab protected branches](https://docs.gitlab.com/ee/user/project/protected_branches.html)
+
+## Why?
+
+- To make sure the code that doesn't meet set standards ends up in the main branches
+
+## Installation
+
+Provided by your Git hosting service.
+
+## Configuration
+
+Configuration depends on your Git hosting service, but the things to look for are:
+
+- protect the main branch at least
+- require pull requests before merging
+- require pull request approvals
+- require status checks to pass before merging
+
+## Usage
+
+Push your branch, create a pull request to main branch, and see the magic happen 🧙‍♀️
