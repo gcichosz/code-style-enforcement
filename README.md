@@ -3,6 +3,7 @@
 # Table of contents
 
 - [Plan](#plan)
+- [Benefits](#benefits)
 - [Prettier](#prettier)
 - [ESLint](#eslint)
 - [GitHub Actions](#github-actions)
@@ -30,6 +31,18 @@
 16. Problem #8 - legacy
 17. Solution #8 - configuration and incremental refactoring
 18. Outro - why do we need all of this?
+
+# Benefits
+
+Benefits of enforcing code style include:
+
+- Smoother, easier, and deeper code reviews
+- Less time debating nits
+- Better developer experience
+- Less time doing mundane tasks, more time doing real developer "stuff"
+- Lower entry threshold
+- Less bugs caused by common mistakes
+- Higher code quality and confidence
 
 # Prettier
 
