@@ -2,7 +2,6 @@
 
 # Table of contents
 
-- [Plan](#plan)
 - [Benefits](#benefits)
 - [Prettier](#prettier)
 - [ESLint](#eslint)
@@ -10,27 +9,6 @@
 - [Husky](#husky)
 - [lint-staged](#lint-staged)
 - [Branch protection](#branch-protection)
-
-# Plan
-
-1. Intro - what is code style enforcement about?
-2. Problem #1 - tabs vs. spaces (single vs. double quotes etc., during code review, during file saving)
-3. Solution #1 - Prettier
-4. Problem #2 - common mistakes
-5. Solution #2 - ESLint
-6. Problem #3 - forgetfulness
-7. Solution #3 - continuous inspection
-8. Problem #4 - long feedback loop
-9. Solution #4 - Husky
-10. Problem #5 - could be shorter feedback loop
-11. Solution #5 - lint-staged
-12. Problem #6 - manual fixes
-13. Solution #6 - automated fixes
-14. Problem #7 - laziness
-15. Solution #7 - branch protection
-16. Problem #8 - legacy
-17. Solution #8 - configuration and incremental refactoring
-18. Outro - why do we need all of this?
 
 # Benefits
 
